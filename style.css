@@ -1,0 +1,275 @@
+:root{
+    --blue:#ff6348;
+    --black:#141110;
+}
+
+html{
+    font-size: 17px;
+    /* font-family: 'Roboto'; */
+    overflow-x: hidden;
+}
+ 
+*{
+    margin:0px; padding:0px;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .3s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+section{
+    padding: 2rem 5rem;
+}
+
+.begin{
+    display: inline-block;
+    margin-top: 0.8rem;
+    background: #ff7f50;
+    color: black;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.begin:hover{
+    background: #ff3f34;
+}
+
+.head-1{
+    background: #ff6348;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.head-1 .search_bar{
+    display: flex;
+    height: 3rem;    
+}
+
+.head-1 .search_bar #searching_bar{
+    height: 70%;
+    width: 70%;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    font-size: 17px;
+    color: black;
+    border: 0.2rem solid gray;    
+    border-radius: 2rem;
+}
+
+.head-1 .search_bar label{
+    height: 70%;
+    width: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: black;
+    background: white;
+    text-align: center;
+    border-radius: 80%;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+}
+
+.head-1 .search_bar label:hover{
+    background: gray;
+}
+
+.head-2{
+    background: whitesmoke;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+}
+
+.head-2.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.head-2 .navigation1 a{
+    padding: 0.1rem 0.5rem;
+    font-size: 17px;
+    border-radius: 0.5rem;
+    color: black;
+}
+
+.head-2 .navigation1 a:hover{
+    background: #ff6348;
+    color: white;
+}
+
+.head-2 .cartuser a{
+    font-size: 1.7rem;
+    color: black;
+    padding-left: 1rem;
+}
+
+.head-2 .cartuser a:hover{
+    color: #ff6348;
+}
+
+#slide_bar{
+    display: none;
+    font-size: 20px;
+    padding: 0.5rem 1.4rem;
+    color: black;
+    cursor: pointer;
+}
+
+/* body{
+    height: 300rem;
+} */
+
+.endpage .wrapper{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+
+.endpage .wrapper .box{
+    padding: 1rem 0;
+    flex: 1 1 4rem;
+}
+
+.endpage .wrapper .box .follow_us a{
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+
+.endpage .wrapper .box h3{
+    font-size: 1.3rem;
+    color: black;
+}
+
+.endpage .wrapper .box p{
+    font-size: 0.9rem;
+    color: black;
+    padding: 0.7rem;
+}
+
+.endpage .wrapper .box .quickinformation{
+    padding: 0.7rem 0;
+}
+
+.endpage .wrapper .box .quickinformation a{
+    display: block;
+    padding: 0.1rem 0;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.endpage .wrapper .box .quickinformation a:hover{
+    text-decoration: underline;
+    color: #ff7f50;
+}
+
+.endpage .copyright{
+    padding: 2.5rem 1rem;
+    border-top: 0.1rem solid black;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.endpage .copyright span{
+    color: #ff6348;
+}
+
+.endpage{
+    background: whitesmoke;
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:1023px){
+    .head-1,
+    .head-2{
+        padding: 1.8rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    #slide_bar{
+        display: initial;
+    }
+    .head-2 .navigation1{
+        position: absolute;
+        top: 100%; right: 0%; left: 0%;
+        background: gray;
+        padding: 1rem 1.5rem;
+        display: none;
+    }
+
+    .head-2 .navigation1.active{
+        display: initial;
+    }
+
+    .head-2 .navigation1 a{
+        font-size: 2.5rem;
+        display: block;
+        text-align: center;
+        background: white;
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+    .homepage .introduction h3{
+        font-size: 2rem;
+    }
+}
+
+.homepage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.homepage .image{
+    flex: 1 1 30rem;
+    padding-top: 0.4rem;
+}
+
+.homepage .image img{
+    width: 90%;
+}
+
+.homepage .introduction{
+    flex: 1 1 10rem;
+}
+
+.homepage .introduction span{
+    font-size: 2rem;
+}
+
+.homepage .introduction h3{
+    font-size: 3rem;
+    color: #ff6348;
+}
+

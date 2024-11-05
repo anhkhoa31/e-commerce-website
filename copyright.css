@@ -1,0 +1,18 @@
+#copyright_page .form_container {
+    width: 80%;
+    line-height: 30px;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+    background-color: #FFFFFF;
+    
+}
+
+#copyright_page ol {
+    margin-left: 40px;
+}
+
+#copyright_page ul {
+    margin-left: 40px;
+}

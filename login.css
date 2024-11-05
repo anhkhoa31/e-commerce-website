@@ -1,0 +1,41 @@
+#login_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d89352;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+ a:hover {
+    color: lightblue;
+ }
+
+.form_container {
+    background-color: #FFFFFF;
+    margin-bottom: 200px;
+    border: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 10px 20px 0 rgba(0, 0, 0, 0.3)
+}
+
+.form_item_group {
+    width: 95%;
+}
+
+.dialog_body{
+    margin-bottom: 200px;
+}
+
+.form_item_group {
+    margin-top: 20px;
+}
+
+.form_item_group label {
+    flex: 1;
+}
+
+.form_item_group input {
+    flex: 6;
+    height: 30px;
+}

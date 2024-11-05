@@ -1,0 +1,88 @@
+#about_page.main_content {
+    background-color: #3053A3;
+    /* background-image: linear-gradient(to bottom, #d89352 , #5B48EC); */
+}
+#about_page .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 20vh;
+}
+
+#about_page h1 {
+    color: #FFFFFF;
+    padding: 5px;
+    /* border-bottom: #5B48EC solid 4px; */
+    background-image: linear-gradient(to right, #8C36FF , #5380FF, #4CD3FF);
+    border-radius: 5px;
+
+}
+
+#group_infor .form_container{
+    border: none;
+}
+
+#group_member {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#group_member .form_container {
+    height: 60vh;
+    width: 10vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #FFFFFF;
+    margin-top: 100px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 10px 20px 0 rgba(0, 0, 0, 0.3)
+}
+
+#about_page .form_item_profile {
+    border: #F6580A solid 4px;
+}
+
+#about_page .form_body {
+    margin-bottom: 30%;
+    line-height: 25px;
+    text-align: justify;
+    padding: 0 10px 10px 10px;
+}
+
+#about_page .form_body h2, #about_page .form_body h4 {
+    text-align: center;
+}
+
+@keyframes transform {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+} 
+
+#kiet, #hung, #khoa, #khang {
+    animation-name: transform;
+    animation-duration: 3s;
+}
+
+
+#kiet:hover, #hung:hover, #khoa:hover, #khang:hover {
+    transition: all 0.2s linear;
+}
+
+#kiet h2, #hung h2, #khoa h2, #khang h2 {
+    color: #F6580A;
+}
+
+#about_page .form_item_profile {
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,26 @@
+#nav_header .nav_link {
+    padding: 0 1.5vw;
+}
+
+.nav_link.logo_container:hover {
+    background-color: #FFFFFF;
+    height: 100%;
+    border-bottom:#FFFFFF solid 4px;
+}
+
+#login_btn, #acc_btn {
+    padding: 10px;
+    width: 110px;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#login_btn:hover, #acc_btn:hover {
+    background-color: #5b48ec;
+    color: white;
+}
+
+#logout_btn, #register_btn {
+    padding: 10px;
+    width: 110px;
+}

@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+/*CSS for registration pages*/
+body{
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+#names{
+    display: none;
+}
+
+form{
+    background-color: white;
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+    line-height: 40px;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 20px;
+    box-shadow: inset -2px 2px 2px 2px white;
+    margin-top: 30px;
+}
+
+.form-field{
+    font-weight: bold; 
+}
+
+.form-title{
+    margin-top: 70px;
+    color: orange;
+}
+
+header{
+    display: flex;
+    margin-bottom: auto;
+    
+}
+
+
+header img{
+    height: 50px;
+    width: 100px;
+}
+
+header h {
+    font-size: 36px;
+    color: pink;
+    margin-left: 10px
+}
+
+
+footer {
+    clear: both;
+    position: relative;
+    height: 100px;
+    margin-top: 120px;
+}
+
+footer ul li a{
+    color: white;
+}
+
+footer ul li a:hover{
+    color: yellow;
+}
+
+.myaccount{
+    height: 20px;
+    margin-left: 400px;
+    margin-top: 60px;
+}
+
+.login{
+    height: 20px;
+    margin-left: 25px;
+    margin-top: 60px;
+}
+
+/*CSS for vendorpage*/
+.myproduct {
+    height: 20px;
+    margin-left: 25px;
+    margin-top: 80px;
+}
+
+.addproduct {
+    height: 20px;
+    margin-left: 25px;
+    margin-top: 80px;
+
+}
+
+.vendor {
+    background: url(vendorbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.vendor label {
+    color: orange;
+}
+
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.vendor #description{
+    display: block;
+}
+
+body .viewproduct .addedproduct{
+    display: column;
+    color: red;
+}
+
+/*PC*/
+@media (min-width: 1024px) {
+    form {display: block;}
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    form {
+        display: block;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    .myaccount{
+        height: 20px;
+        margin-left: 200px;
+        margin-top: 80px;
+    }
+    
+    .login{
+        height: 20px;
+        margin-left: 15px;
+        margin-top: 80px;
+    }
+
+
+}
+
+/*MOBILE*/
+@media (max-width: 767px) {
+    body{
+        background: url(background.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 50vh;
+    }
+
+    form {
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+        line-height: 40px;
+        padding: 3px;
+        margin: 0 3px;
+        border-radius: 5px;
+        box-shadow: inset -2px 2px 2px 2px white;
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+
+    }
+
+    footer {
+        clear: both;
+        position: relative;
+        height: 80px;
+        margin-top: 30px;
+    }
+
+    .myaccount{
+        height: 20px;
+        margin-left: 15px;
+        margin-top: 80px;
+    }
+    
+    .login{
+        height: 20px;
+        margin-left: 15px;
+        margin-top: 80px;
+    }
+
+    textarea {
+        font-size: .5rem;
+        letter-spacing: .5px;
+    }
+
+    textarea {
+        padding: 7px;
+        max-width: 100%;
+        line-height: .9;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #999;
+    }
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+  
+td, th {
+    border: 1px solid #bdbbbb;
+    text-align: center;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table img{
+    width:200px;
+}
+
+.main_content{
+    padding: 10px;
+    text-align: center;
+}
+.main_content h1{
+    text-align: center;
+    margin:30px;
+}
+
+.main_content form{
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#register-form a.btn {
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5B48EC;
+    color: white;
+    margin-right: 20px;
+}
+
+#register-form a.btn:hover {
+    background-color: #151A6C;
+}
+
+#addproduct-form .btn, #register-form .btn {
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F65609;
+    color: white;
+}
+
+#addproduct-form .btn:hover, #register-form .btn:hover {
+    background-color: #DF9746;
+}
+
+#addproduct-form, #register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addproduct-form .form-body, #register-form .form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#addproduct-form .form-body .form-field, #register-form .form-body .form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#addproduct-form .form-body .form-field input.form_item {
+    padding: 10px;
+}
+
+#register-form .form-body .form-field input.form_item {
+    padding: 10px;
+}
+
+#register-form .form-body .form-field select.form_item {
+    padding: 5px;
+}
+
+.form-submit-button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}

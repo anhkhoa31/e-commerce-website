@@ -1,0 +1,17 @@
+#privacy_page .form_container {
+    width: 80%;
+    line-height: 30px;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+#privacy_page ol {
+    margin-left: 40px;
+}
+
+#privacy_page ul {
+    margin-left: 40px;
+}

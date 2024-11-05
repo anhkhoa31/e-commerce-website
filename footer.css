@@ -1,0 +1,12 @@
+#nav_footer {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copyright {
+    margin-right: 20px;
+}
+
+#nav_footer .nav_navbar {
+    margin-left: 5px;
+}
+

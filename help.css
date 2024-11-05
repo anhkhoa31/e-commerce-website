@@ -1,0 +1,18 @@
+#help_page_body .form_container {
+    width: 80%;
+    background-color: #FFFFFF;
+    border: none;
+    line-height: 30px;
+}
+
+#help_page .form_item {
+    padding: 0 20px;
+}
+
+#help_page .form_item ol {
+    padding-left: 40px;
+}
+
+#help_page .form_item ul {
+    padding-left: 40px;
+}

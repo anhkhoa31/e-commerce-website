@@ -1,0 +1,497 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_content {
+    background-color: #EFF0F5;
+    min-height: 80vh;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_btn {
+    background-color: #F65A09;
+    text-decoration: none;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.nav_btn:hover {
+    background-color: #DF9746;
+}
+
+.nav_btn img{
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 40vh;
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+.form_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.form_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_item_profile {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.form_item_profile img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.form_item_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.form_item {
+    flex: 1;
+    width: 100%;
+}
+
+input.form_item {
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.dialog {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+.dialog_body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    min-width: 40vh;
+    min-height: 20vh;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.dialog_title {
+    flex: 2;
+}
+
+.dialog_message {
+    flex: 3;
+    text-align: center;
+}
+
+.dialog_btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F65A09;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.dialog_btn:hover {
+    background-color: #DF9746;
+}
+#close:target {
+    visibility: hidden;
+}
+
+.dialog_close {
+    visibility: hidden;
+}
+
+.success_icon {
+    color:green;
+}
+
+.error_icon {
+    color:red;
+}
+
+#nav_footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+#nav_header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.nav_navbar {
+    display:flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav_item {
+    height: 100%;
+    display:flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav_link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.logo {
+    height: 100%;
+}
+
+.nav_link:link, .nav_link:visited{
+    color: #000000;
+}
+
+.nav_link:hover, .nav_link:active{
+    color: #DF9746;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .desktop {
+        visibility: visible;
+    }
+    
+    #nav_header.mobile, #nav_header.menu_btn {
+        display: none;
+    }
+
+    #login_btn, #acc_btn {
+        margin-right: 5px;
+    }
+
+    #logout_btn, #register_btn {
+        margin-right: 20px;
+    }
+
+    .nav_link:link, .nav_link:visited{
+        border-bottom:#FFFFFF solid 4px;
+    }
+    
+    .nav_link:hover, .nav_link:active{
+        height: 70%;
+        border-bottom:#5B48EC solid 4px;
+    }
+
+    #nav_footer .nav_link {
+        padding: 0 30px 0 30px;
+    }
+
+    #about_page .form_item_profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    #kiet.form_container:hover, #hung.form_container:hover, #khoa.form_container:hover, #khang.form_container:hover {
+        margin-top: -20px;
+    }
+
+    #customer_page #product_container .column {
+        width: 33.3%;
+        height: 70vh;
+        margin-top: 10px;
+    }
+
+    #customer_page #products .card{
+        width: 80%;
+    }
+
+    #customer_page #product_container .column img {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #nav_header.desktop {
+        display: none;
+    }
+
+    #nav_header.menu_btn {
+        position: relative;
+        background-color: #5B48EC;
+    }
+
+    #nav_header.mobile {
+        flex-direction: column;
+        width: 25%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left: -100%;
+        background-color: rgb(91, 72, 236, 0.8);
+        z-index: 100;
+    }
+
+    button#open {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    #nav_header.mobile .nav_navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #nav_header.mobile ul.nav_navbar:first-child {
+        flex: 3;
+    }
+
+    #nav_header.mobile ul.nav_navbar:nth-child(2) {
+        flex: 1;
+    }
+
+    #nav_header.mobile .nav_navbar:first-child .nav_item {
+        height: 80px;
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+    }
+    
+    #nav_header.mobile .nav_navbar:first-child .nav_link {
+        width: 100%;
+    }
+
+    #nav_header .nav_link:link, #nav_header .nav_link:visited{
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    #nav_header .nav_link:hover, #nav_header .nav_link:active{
+        text-transform: uppercase;
+        background-color: #FFFFFF;
+        color: #5B48EC;
+    }
+
+    #nav_header .nav_link.logo_container:link, #nav_header .nav_link.logo_container:visited{
+        background-color: #FFFFFF;
+    }
+    
+    #nav_header .nav_link.logo_container:hover, #nav_header .nav_link.logo_container:active{
+        background-color: #FFFFFF;
+    }
+
+    #login_btn, #acc_btn, #logout_btn, #register_btn {
+        margin-top: 10px;
+    }
+
+    #nav_footer {
+        height: 20vh;
+    }
+
+    #about_page .form_item_profile {
+        width: 170px;
+        height: 170px;
+    }
+
+    #nav_footer .nav_link {
+        padding: 0 20px 0 20px;
+    }
+
+    #kiet.form_container:hover, #hung.form_container:hover, #khoa.form_container:hover, #khang.form_container:hover {
+        margin-top: -2px;
+    }
+
+    #customer_page #product_container .column {
+        width: 50%;
+        height: 65vh;
+        margin-top: 10px;
+    }
+
+    #customer_page #products .card{
+        width: 70%;
+    }
+
+    #customer_page #product_container .column img {
+        height: 25vh;
+        width: 20vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #nav_header.desktop {
+        display: none;
+    }
+    #nav_header.menu_btn {
+        position: relative;
+        background-color: #5B48EC;
+    }
+
+    button#open {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .mobile {
+        visibility: visible;
+    }
+
+    #nav_header.mobile {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left: -100%;
+        background-color: rgb(91, 72, 236, 0.8);
+        z-index: 100;
+        align-items: center;
+    }
+
+    #nav_header.mobile ul.nav_navbar:first-child {
+        flex: 3;
+    }
+
+    #nav_header.mobile ul.nav_navbar:nth-child(2) {
+        flex: 1;
+    }
+
+    #nav_header .nav_navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #nav_header.mobile .nav_navbar:first-child .nav_item {
+        height: 20%;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    #nav_header .nav_link:link, #nav_header .nav_link:visited{
+        width: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    #nav_header .nav_link:hover, #nav_header .nav_link:active{
+        width: 100%;
+        text-transform: uppercase;
+        background-color: #FFFFFF;
+        color: #5B48EC;
+    }
+
+    #nav_header .nav_link.logo_container:link, #nav_header .nav_link.logo_container:visited{
+        background-color: #FFFFFF;
+    }
+    
+    #nav_header .nav_link.logo_container:hover, #nav_header .nav_link.logo_container:active{
+        background-color: #FFFFFF;
+    }
+
+    #login_btn, #acc_btn, #logout_btn, #register_btn {
+        margin-top: 5px;
+    }
+
+    #nav_footer {
+        height: 20vh;
+    }
+
+    #nav_footer .nav_navbar {
+        flex-direction: column;
+    }
+
+    #nav_footer .nav_link {
+        padding: 0 20px 0 20px;
+    }
+
+    #about_page .form_item_profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    #customer_page #product_container .column {
+        width: 80%;
+        height: 65vh;
+        margin-top: 10px;
+    }
+
+    #customer_page #products .card{
+        width: 70%;
+    }
+
+    #customer_page #product_container .column img {
+        height: 35vh;
+        width: 30vw;
+    }
+}
